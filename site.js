@@ -9,6 +9,10 @@ const SITE = {
   contactLabel: "formularz zgłoszeń na GitHub",
   // Sprzedawca (imię i nazwisko lub nazwa firmy)
   seller: "TechnikTomek",
+  // Pliki do pobrania (GitHub Releases – „latest” zawsze wskazuje najnowszą wersję)
+  downloads: {
+    mac: "https://github.com/TechnikTomek/appdesigner-strona/releases/latest/download/AppDesigner-mac-universal.dmg",
+  },
 };
 
 // Uzupełnij dane w treści stron
@@ -24,6 +28,10 @@ document.querySelectorAll("[data-buy]").forEach((el) => {
     el.setAttribute("aria-disabled", "true");
     el.textContent = "Sprzedaż rusza wkrótce";
   }
+});
+document.querySelectorAll("[data-download]").forEach((el) => {
+  const url = SITE.downloads[el.dataset.download];
+  if (url) el.href = url;
 });
 document.querySelectorAll("[data-year]").forEach((el) => (el.textContent = new Date().getFullYear()));
 
