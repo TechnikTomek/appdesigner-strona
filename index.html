@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AppDesigner – twórz aplikacje bez kodowania</title>
+  <meta name="description" content="AppDesigner to aplikacja na macOS, Windows i Linux do tworzenia aplikacji desktopowych bez pisania kodu: projektant ekranów, logika z węzłów, podgląd na żywo i eksport." />
+  <meta property="og:title" content="AppDesigner – twórz aplikacje bez kodowania" />
+  <meta property="og:description" content="Ułóż ekrany, połącz logikę kabelkami i wyeksportuj prawdziwą aplikację desktopową." />
+  <meta property="og:image" content="img/projektant.jpg" />
+  <link rel="icon" href="img/favicon.png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg" aria-hidden="true"><div class="blob a"></div><div class="blob b"></div><div class="blob c"></div></div>
+
+  <header class="nav">
+    <div class="wrap">
+      <a class="brand" href="#"><img src="img/logo.svg" alt="" />AppDesigner</a>
+      <nav class="links">
+        <a href="#funkcje">Funkcje</a>
+        <a href="#jak">Jak to działa</a>
+        <a href="#cennik">Cennik</a>
+        <a href="#faq">FAQ</a>
+        <a class="btn btn-primary btn-sm" href="#cennik">Pobierz</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" style="padding-top:84px">
+      <div class="wrap">
+        <div class="hero-logo">
+          <div class="glow"></div>
+          <svg viewBox="0 0 1024 1024" width="112" height="112" aria-label="Logo AppDesigner">
+            <defs>
+              <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#03211f"/><stop offset="1" stop-color="#051a33"/></linearGradient>
+              <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5eead4"/><stop offset="1" stop-color="#0ea5e9"/></linearGradient>
+              <linearGradient id="gl" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".35"/><stop offset="1" stop-color="#fff" stop-opacity=".06"/></linearGradient>
+              <linearGradient id="ed" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".9"/><stop offset=".5" stop-color="#fff" stop-opacity=".1"/><stop offset="1" stop-color="#fff" stop-opacity=".5"/></linearGradient>
+              <filter id="b" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="60"/></filter>
+              <clipPath id="c"><rect width="1024" height="1024" rx="228"/></clipPath>
+            </defs>
+            <g clip-path="url(#c)">
+              <rect width="1024" height="1024" fill="url(#bg)"/>
+              <circle cx="300" cy="300" r="240" fill="#14b8a6" opacity=".6" filter="url(#b)"/>
+              <circle cx="760" cy="760" r="240" fill="#3b82f6" opacity=".6" filter="url(#b)"/>
+              <g class="card c1"><rect x="200" y="200" width="380" height="380" rx="90" fill="url(#g1)"/></g>
+              <g class="card c2"><rect x="322" y="322" width="380" height="380" rx="90" fill="url(#gl)"/><rect x="322" y="322" width="380" height="380" rx="90" fill="none" stroke="url(#ed)" stroke-width="6"/></g>
+              <g class="card c3"><rect x="444" y="444" width="380" height="380" rx="90" fill="url(#gl)"/><rect x="444" y="444" width="380" height="380" rx="90" fill="none" stroke="url(#ed)" stroke-width="6"/></g>
+              <path class="plus" d="M584 634 L684 634 M634 584 L634 684" stroke="#fff" stroke-width="34" stroke-linecap="round"/>
+            </g>
+          </svg>
+        </div>
+        <span class="badge"><b>NOWOŚĆ</b> macOS · Windows · Linux</span>
+        <h1>Twórz aplikacje <span class="grad-text">bez kodowania</span></h1>
+        <p class="lead">Ułóż ekrany z gotowych komponentów, połącz logikę kabelkami jak w Blueprintach i wyeksportuj prawdziwą aplikację desktopową – jednym kliknięciem.</p>
+        <div class="cta">
+          <a class="btn btn-primary" href="#cennik">Zacznij za darmo →</a>
+          <a class="btn btn-glass" href="#jak">Zobacz, jak to działa</a>
+        </div>
+
+        <div class="showcase">
+          <div class="tabs glass">
+            <button class="on" data-shot="a">Projektant ekranu</button>
+            <button data-shot="b">Logika z węzłów</button>
+            <button data-shot="c">Szablony</button>
+          </div>
+          <div class="frame glass">
+            <img class="shot on" data-shot="a" src="img/projektant.jpg" alt="Projektant ekranu AppDesigner z kalkulatorem" width="1360" height="860" />
+            <img class="shot" data-shot="b" src="img/wezly.jpg" alt="Tryb węzłów: logika połączona kabelkami" width="1360" height="860" loading="lazy" />
+            <img class="shot" data-shot="c" src="img/szablony.jpg" alt="Galeria szablonów aplikacji" width="1360" height="860" loading="lazy" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="funkcje">
+      <div class="wrap">
+        <div class="kicker reveal">Funkcje</div>
+        <h2 class="reveal">Wszystko, czego potrzebujesz, żeby zbudować własną aplikację</h2>
+        <p class="sub reveal">Bez instalowania kompilatorów, bez pisania kodu – AppDesigner zrobi resztę.</p>
+        <div class="grid">
+          <div class="feat glass reveal" style="--d:0s"><div class="ic">▦</div><h3>Projektant ekranu</h3><p>Przeciągasz przyciski, pola, listy, tabele i kontenery. Siatka, przyciąganie i linie pomocnicze dbają o porządek.</p></div>
+          <div class="feat glass reveal" style="--d:.06s"><div class="ic">⟷</div><h3>Logika z węzłów</h3><p>Zdarzenia, warunki, pętle, zmienne i matematyka połączone kabelkami – czytelnie jak schemat.</p></div>
+          <div class="feat glass reveal" style="--d:.12s"><div class="ic">▶</div><h3>Podgląd na żywo</h3><p>Twoja aplikacja działa w osobnym oknie, a na kabelkach widać, którędy właśnie płyną dane.</p></div>
+          <div class="feat glass reveal" style="--d:.18s"><div class="ic">▤</div><h3>Baza danych bez SQL</h3><p>Tabele jak w Excelu – zadania, wydatki, notatki. Gotowa aplikacja zapamiętuje dane.</p></div>
+          <div class="feat glass reveal" style="--d:.24s"><div class="ic">◈</div><h3>Efekt szkła i motywy</h3><p>Nowoczesny wygląd od pierwszego kliknięcia: półprzezroczyste panele, gradienty, animacje.</p></div>
+          <div class="feat glass reveal" style="--d:.3s"><div class="ic">⇪</div><h3>Eksport aplikacji</h3><p>Jedno kliknięcie i masz samodzielną aplikację .app, .exe lub AppImage – działa bez AppDesigner.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="jak">
+      <div class="wrap">
+        <div class="kicker reveal">Jak to działa</div>
+        <h2 class="reveal">Od pomysłu do aplikacji w trzech krokach</h2>
+        <p class="sub reveal">Zacznij od pustego projektu albo jednego z ośmiu szablonów.</p>
+        <div class="steps">
+          <div class="step glass reveal"><div class="n">1</div><h3>Ułóż ekran</h3><p>Przeciągnij komponenty, ustaw kolory, czcionki i efekt szkła w panelu właściwości.</p></div>
+          <div class="step glass reveal" style="--d:.08s"><div class="n">2</div><h3>Połącz logikę</h3><p>Kliknij komponent i wybierz „Pokaż logikę”. Łącz kafelki kabelkami – „po kliknięciu → policz → pokaż wynik”.</p></div>
+          <div class="step glass reveal" style="--d:.16s"><div class="n">3</div><h3>Wyeksportuj</h3><p>Sprawdź wszystko w podglądzie ▶ i kliknij „Eksportuj”. Gotowe – możesz dać aplikację znajomym.</p></div>
+        </div>
+
+        <div class="split" style="margin-top:70px">
+          <div class="reveal">
+            <h2>Szablony na start</h2>
+            <p class="sub">Każdy szablon to działająca aplikacja, którą możesz dowolnie zmieniać i uczyć się na niej.</p>
+            <ul>
+              <li>Kalkulator z nawiasami i historią</li>
+              <li>Lista zadań zapisywana w bazie</li>
+              <li>Notatnik z wczytywaniem i zapisem</li>
+              <li>Quiz z punktacją na trzech ekranach</li>
+              <li>Timer – stoper ze startem i pauzą</li>
+              <li>Pro: tracker wydatków, pogoda z internetu, tablica Kanban</li>
+            </ul>
+          </div>
+          <div class="glass reveal" style="border-radius:20px;padding:8px;--d:.1s"><img src="img/szablony.jpg" alt="Szablony AppDesigner" style="border-radius:14px" loading="lazy" /></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="cennik">
+      <div class="wrap">
+        <div class="kicker reveal">Cennik</div>
+        <h2 class="reveal">Za darmo na start. Pro – raz i na zawsze.</h2>
+        <p class="sub reveal">Bez abonamentu. Płacisz jednorazowo, klucz licencyjny działa na 3 komputerach.</p>
+        <div class="plans">
+          <div class="plan glass reveal">
+            <h3>Darmowa</h3>
+            <p class="pd">Wszystko, żeby zacząć i nauczyć się tworzenia aplikacji.</p>
+            <div class="price"><b>0 zł</b><span>na zawsze</span></div>
+            <ul>
+              <li>Do 3 projektów</li>
+              <li>Wszystkie podstawowe komponenty i węzły</li>
+              <li>5 szablonów</li>
+              <li>Motywy Glass Dark i Glass Light</li>
+              <li>Baza danych do 100 wierszy w tabeli</li>
+              <li>Eksport na bieżący system ze znakiem „Made with AppDesigner”</li>
+              <li class="no">Węzły zaawansowane (HTTP/API, pliki, powiadomienia)</li>
+            </ul>
+            <a class="btn btn-glass" href="#faq">Pobieranie – zobacz FAQ</a>
+          </div>
+          <div class="plan pro reveal" style="--d:.1s">
+            <span class="tag">★ Najlepszy wybór</span>
+            <h3>AppDesigner Pro</h3>
+            <p class="pd">Pełnia możliwości dla twórców, którzy chcą więcej.</p>
+            <div class="price"><b>99 zł</b><span>jednorazowo</span></div>
+            <ul>
+              <li>Bez limitu projektów i wierszy w bazie</li>
+              <li>Węzły zaawansowane: HTTP/API, pliki, powiadomienia, animacje, schowek, daty</li>
+              <li>Wszystkie 8 szablonów i 6 motywów</li>
+              <li>Eksport bez znaku wodnego, z własną nazwą i ikoną</li>
+              <li>Aktywacja na 3 komputerach</li>
+              <li>Darmowe aktualizacje wersji 1.x</li>
+            </ul>
+            <a class="btn btn-pro" data-buy href="#">Kup Pro – 99 zł</a>
+          </div>
+        </div>
+        <p class="note reveal">Płatności obsługuje Lemon Squeezy (Merchant of Record) – karta, PayPal, Apple Pay i inne metody zależnie od kraju. Faktura i VAT rozliczane automatycznie.</p>
+      </div>
+    </section>
+
+    <section id="faq">
+      <div class="wrap faq">
+        <div class="kicker reveal">FAQ</div>
+        <h2 class="reveal" style="margin-bottom:30px">Najczęstsze pytania</h2>
+        <details class="glass reveal"><summary>Czy muszę umieć programować?</summary><div class="ans">Nie. Ekrany układasz myszką, a logikę łączysz kafelkami. Na start masz gotowe szablony, które możesz zmieniać.</div></details>
+        <details class="glass reveal"><summary>Na jakich systemach działa AppDesigner?</summary><div class="ans">Na macOS (Intel i Apple Silicon), Windows 10/11 i Linuksie (AppImage, .deb). Eksportowana aplikacja działa na tym samym systemie, na którym ją wyeksportowano.</div></details>
+        <details class="glass reveal"><summary>Jak pobrać AppDesigner?</summary><div class="ans">Wersja 1.0 jest właśnie przygotowywana do publicznego pobierania – link pojawi się w tym miejscu. Klucz Pro kupiony wcześniej zadziała od razu po instalacji.</div></details>
+        <details class="glass reveal"><summary>Jak działa licencja Pro?</summary><div class="ans">Po zakupie dostajesz e-mailem klucz licencyjny. Wpisujesz go w AppDesigner w oknie „Aktywuj Pro”. Klucz działa na 3 komputerach, a po aktywacji także bez internetu.</div></details>
+        <details class="glass reveal"><summary>Czy mogę dostać zwrot pieniędzy?</summary><div class="ans">Tak – przez 14 dni od zakupu, bez podawania przyczyny. Szczegóły w <a href="zwroty.html" style="color:var(--teal)">polityce zwrotów</a>.</div></details>
+        <details class="glass reveal"><summary>Czy moje aplikacje należą do mnie?</summary><div class="ans">Tak. Aplikacje, które tworzysz w AppDesigner, możesz używać, udostępniać i sprzedawać. W wersji darmowej zawierają mały znak „Made with AppDesigner”.</div></details>
+        <details class="glass reveal"><summary>Dlaczego macOS ostrzega przy pierwszym uruchomieniu?</summary><div class="ans">Aplikacja nie jest jeszcze podpisana certyfikatem Apple. Przy pierwszym uruchomieniu kliknij ją prawym przyciskiem → „Otwórz” → „Otwórz”. Później działa normalnie.</div></details>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <span>© <span data-year>2026</span> AppDesigner · Sprzedawca: <span data-seller>TechnikTomek</span></span>
+      <nav>
+        <a href="regulamin.html">Regulamin</a>
+        <a href="zwroty.html">Zwroty</a>
+        <a href="prywatnosc.html">Prywatność</a>
+        <a data-contact href="#">Kontakt</a>
+      </nav>
+    </div>
+  </footer>
+  <script src="site.js"></script>
+</body>
+</html>
